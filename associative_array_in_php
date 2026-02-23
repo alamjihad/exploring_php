@@ -1,0 +1,23 @@
+<?php
+// ১. নিজের তথ্য দিয়ে একটা অ্যারে বানা
+$amar_totto = [
+    "naam" => "তোর নাম",
+    "shomoy" => "১ ঘণ্টা",
+    "target" => "পিএইচপি ডেভেলপার"
+];
+
+// ২. ডাটা প্রিন্ট কর
+echo "<h1>স্বাগতম, " . $amar_totto['naam'] . "!</h1>";
+echo "তোর প্রতিদিনের সময়: " . $amar_totto['shomoy'] . "<br>";
+echo "তোর লক্ষ্য: " . $amar_totto['target'];
+
+$skills = [
+    "C" => "Expert",
+    "JS" => "Intermediate",
+    "PHP" => "Beginner"
+];
+
+foreach($skills as $bhasha => $level) {
+    echo "আমি " . $bhasha . " ভাষায় " . $level . "<br>";
+}
+?>
