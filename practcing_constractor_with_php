@@ -1,0 +1,19 @@
+<?php
+class Student {
+    public $name;
+    public $roll;
+
+    public function __construct($n, $r) {
+        $this->name = $n;
+        $this->roll = $r;
+        echo "object has created and data has also placed <br>";
+    }
+
+    public function showDetails() {
+        return "আমার নাম: " . $this->name . ", আমার রোল: " . $this->roll;
+    }
+}
+
+$student1 = new Student("জিহাদ",5678971);
+echo $student1->showDetails();
+?>
