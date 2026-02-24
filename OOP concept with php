@@ -1,0 +1,16 @@
+<?php
+class Student {
+    public $name;
+    public $roll;
+    
+    public function showDetails() {
+        return "আমি হলাম". " ". $this->name . " " . "আমার রোল"." "   . $this->roll;
+        
+    }
+}
+$myDetail = new Student();
+$myDetail->name = "জিহাদ";
+$myDetail->roll ="১২১২১";
+
+echo $myDetail->showDetails(); 
+?>
